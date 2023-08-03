@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.inc{
+    background-image: url("https://icon-library.com/images/add-icon-transparent/add-icon-transparent-4.jpg");
+    width:30px; height:30px;
+    background-size:cover;border:none; cursor:pointer;
+}
+.dec{
+    background-image: url("https://www.freeiconspng.com/thumbs/delete-button-png/delete-button-png-27.png");
+    width:30px; height:30px;
+    background-size:cover;border:none; cursor:pointer;
+}
