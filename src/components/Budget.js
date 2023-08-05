@@ -1,9 +1,10 @@
-import React, { useContext   } from 'react';
+import React, { useContext, useState   } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
     const {budget, dispatch } = useContext(AppContext);
     const { expenses } = useContext(AppContext);
+    const {currency, setCurrency} = useState('');
     const totalExpenses = expenses.reduce((total, item) => {
         return (total += item.cost);
     }, 0);
@@ -33,6 +34,7 @@ const Budget = () => {
     return (
         <div className='form-inline alert alert-secondary'>
             <label for='bud'>Budget: £</label>
+            {currency} 
             <input
                 type='number'
                 id='budget'
